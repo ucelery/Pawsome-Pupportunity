@@ -242,7 +242,7 @@
 
 .dog-buttons .button .viewBtnCtn .viewBtn {
     width: 125px; 
-    height: 24px;  /* Adjust height as needed */
+    height: 24px;
     position: absolute;
     background: #FEAF48;
     border-radius: 15px;
@@ -254,7 +254,7 @@
     justify-content: center;
     font-family: 'Maven Pro', sans-serif;
     font-weight: 500;
-    font-size: 14px; /* Adjust font size as needed */
+    font-size: 14px;
     color: #fff; 
 }
 
@@ -392,10 +392,10 @@ main-container {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background-color: rgba(254, 202, 134, 0.94); 
+    background-color: rgba(254, 202, 134, 0.95); 
     padding: 20px;
     border-radius: 10px;
-    width: 50%;
+    width: 40%;
     z-index: 1;
     box-sizing: border-box;
     height:min-content;
