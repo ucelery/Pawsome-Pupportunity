@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dog Details</title>
+</head>
+<body>
+  <div class="dog-details">
+    <h1>{{ doggie.dogName }}</h1>
+    <div class="image-container">
+      <img src="data:image/jpeg;base64,{{doggie.dogImage}}" alt="{{ doggie.dogName }} Image">
+    </div>
+    <div class="details">
+      <p><strong>Breed:</strong> {{ doggie.dogBreed }}</p>
+      <p><strong>Age:</strong> {{ doggie.dogAge }} years old</p>
+      <p><strong>Sex:</strong> {{ doggie.dogSex }}</p>
+      <p><strong>Size:</strong> {{ doggie.dogSize }}</p>
+      <p><strong>Birthday:</strong> {{ doggie.dogBDay }}</p>
+      <p><strong>Description:</strong> {{ doggie.dogDescription }}</p>
+    </div>
+  </div>
+</body>
+</html>

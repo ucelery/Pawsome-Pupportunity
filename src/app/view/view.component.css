@@ -1,0 +1,72 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* Dog Details Container */
+  .dog-details {
+    max-width: 800px;
+    margin: 60px auto 0; /* Add a 60px top margin */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Dog Name */
+  .dog-details h1 {
+    color: #5f483e;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Image Container */
+  .image-container {
+    margin: 20px 0;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Details */
+  .details {
+    color: #5f483e;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .details p {
+    margin: 10px 0;
+  }
+  
+  /* Strong Tags (e.g., Breed, Age) */
+  .details strong {
+    font-weight: bold;
+  }
+  
+  /* Back Button */
+  .back-button {
+    margin-top: 20px;
+  }
+  
+  .back-button a {
+    text-decoration: none;
+    background-color: #5f483e;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .back-button a:hover {
+    background-color: #FEAF48;
+  }
+  
