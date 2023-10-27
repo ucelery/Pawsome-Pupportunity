@@ -14,7 +14,7 @@
             </div>
         </div>
         <div *ngFor="let dog of dogs" class="container">
-            <div class="button dog-button">
+            <div class="button dog-button" (click)="toView(dog.dogId)">
                 <div class="icon">
                     <img src="data:image/jpeg;base64,{{dog.dogImage}}" alt="">
                 </div>
