@@ -167,6 +167,7 @@
     width: 150px;
     height: 150px;
     justify-content: center;
+
     border-radius: 25px;
     position: relative;
     border: 4px solid transparent;
@@ -343,7 +344,7 @@
 }
 
 .extra-space {
-    height: 500px;
+    height: 20px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -357,3 +358,143 @@
         height: 80px;
     }
 }
+
+/*Add-on*/
+main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f2f2f2; 
+    padding: 20px;
+  }
+  
+  .grid-container {
+    position: relative;display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .grid-item {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    height: 300px;
+  }
+
+  .central {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(254, 202, 134, 0.94); 
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    z-index: 1;
+    box-sizing: border-box;
+    height:min-content;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+  }
+  
+  .text-container {
+    text-align: left;
+    font: 500 14px Maven Pro, sans-serif;
+  }
+
+/*Contact section*/
+.outer-container {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .inner-container {
+    border-radius: 10px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    width: 40%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-info {
+    background-color: #F2D9C6;
+    border-radius: 10px;
+    width: 25%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .inner-container .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 60px;
+  }
+
+  .inner-container .form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%
+  }
+
+  .inner-container .header h2 {
+    margin-right: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-self:center;
+    font: 600 23px Maven Pro, sans-serif;
+  }
+
+  .inner-container .contactLabel {
+    font: 600 17px Maven Pro, sans-serif;
+    text-align: left;
+    margin-bottom: -15px;
+  }
+
+  .inner-container .inputField {
+    font: 17px Maven Pro, sans-serif;
+    border-radius: 10px;
+    padding: 5px;
+    width: calc(100% - 15px);
+  }
+
+  .inner-container .form input[type="submit"] {
+    font: 16px Maven Pro, sans-serif;
+    background-color: #52B79F;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .inner-container .form input[type="submit"]:hover {
+    background-color: #368170;
+    transform: scale(1.05);
+  }

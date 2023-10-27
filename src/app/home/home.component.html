@@ -337,21 +337,56 @@
     </div>
 
     <!-- DOGS READY TO BE ADOPTED -->
-    <div class="ready-dogs" >
+    <div class="ready-dogs" *ngFor="let dog of dogs">
       <div class="header" style="text-align: center;">
         Dogs Ready to Be Adopted
       </div>
-      <div class = "popup hide">
-      <div class="dog-buttons content-btns popup hide">
-        <div class="button" *ngFor="let dog of dogs" >
+      <div class="dog-buttons content-btns">
+        <div class="button">
           <div class="icon">
             <img src="data:image/jpeg;base64,{{dog.dogImage}}"> 
           </div>
           <div class="label">
             {{dog.dogName}}
           </div>
-          <div class = "viewBtnCtn" (click)="toView(dog.dogId)">
-            <div class = "viewBtn"(click)="toView(dog.dogId)" >View more info</div>
+          <div class = "viewBtnCtn">
+            <div class = "viewBtn">View more info</div>
+          </div>
+        </div>
+
+        <div class="button">
+          <div class="icon">
+            Icon
+          </div>
+          <div class="label">
+            Label
+          </div>
+          <div class = "viewBtnCtn">
+            <div class = "viewBtn">View more info</div>
+          </div>
+        </div>
+
+        <div class="button">
+          <div class="icon">
+            Icon
+          </div>
+          <div class="label">
+            Label
+          </div>
+          <div class = "viewBtnCtn">
+            <div class = "viewBtn">View more info</div>
+          </div>
+        </div>
+
+        <div class="button">
+          <div class="icon">
+            Icon
+          </div>
+          <div class="label">
+            Label
+          </div>
+          <div class = "viewBtnCtn">
+            <div class = "viewBtn">View more info</div>
           </div>
         </div>
 
@@ -362,7 +397,7 @@
             </svg>
           </div>
           <div class="label">
-           More dogs ready to be adopted
+           20 more dogs ready to be adopted
           </div>
           <div class="label-more">
            See more
@@ -371,13 +406,92 @@
             </svg>
           </div>
         </div>
-    </div>
       </div>
     </div>
-    </div>
-
+  </div>
     <div class="extra-space">
       <!-- THIS DIV DOES NOTTING (HILL) JUST SPACE -->
     </div>
   </div>
+
+  <div class="main-container">
+    <div class="grid-container">
+      <div class="grid-item">
+        <!-- Rectangle Picture 1 -->
+        <img src="assets/images/image-1.jpg" alt="Image 1">
+      </div>
+      <div class="grid-item">
+        <!-- Rectangle Picture 2 -->
+        <img src="assets/images/image-2.jpg" alt="Image 2">
+      </div>
+      <div class="grid-item central">
+        <!-- Text and Button -->
+        <div class="text-container">
+          <p>Established in 2023, we are a dedicated adoption center on a mission to change the lives of dogs in need. Our team of compassionate individuals works tirelessly to rescue, care for, and find loving homes for these amazing four-legged friends.</p>
+          <p>Every dog has a unique story, and we believe in giving each one a chance at a paw-some life. With your support, we can continue to make a difference in the lives of these wonderful canines. Join us on our journey to provide homes full of love, laughter, and wagging tails.</p>
+          <p>Discover your future furry friend at Pawsome Pupportunity and be part of our heartwarming adoption community today!"</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <!-- Rectangle Picture 3 -->
+        <img src="assets/images/image-3.jpg" alt="Image 3">
+      </div>
+      <div class="grid-item">
+        <!-- Rectangle Picture 4 -->
+        <img src="assets/images/image-4.jpg" alt="Image 4">
+      </div>
+    </div>
+  </div>  
+  
+  <div class="extra-space">
+    <!-- THIS DIV DOES NOTTING (HILL) JUST SPACE -->
+  </div>
+
+  <section>
+    <div class="outer-container">
+      <div class="inner-container">
+        <div class="header">
+          <h2>Contact Us</h2>
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 166 133" fill="none">
+            <path d="M16.6 133C12.035 133 8.12571 131.371 4.87211 128.112C1.61851 124.854 -0.00551924 120.941 1.40917e-05 116.375V16.625C1.40917e-05 12.0531 1.62681 8.13795 4.88041 4.87945C8.13401 1.62095 12.0405 -0.00552755 16.6 1.41129e-05H149.4C153.965 1.41129e-05 157.874 1.62926 161.128 4.88776C164.381 8.14626 166.006 12.0587 166 16.625V116.375C166 120.947 164.373 124.862 161.12 128.121C157.866 131.379 153.959 133.006 149.4 133H16.6ZM83 74.8125L149.4 33.25V16.625L83 58.1875L16.6 16.625V33.25L83 74.8125Z" fill="#5f483e"/>
+          </svg>
+        </div>
+        <form class="form">
+          <label for="name" class="contactLabel">Name:</label><br>
+          <input type="text" id="name" name="name" class="inputField" placeholder="Juan Dela Cruz" required><br>
+
+          <label for="email" class="contactLabel">Email:</label><br>
+          <input type="email" id="email" name="email" class="inputField" placeholder="name@email.com" required><br>
+
+          <label for="message" class="contactLabel">Message:</label><br>
+          <textarea id="message" name="message" rows="4" class="inputField" placeholder="Type your message here" required></textarea><br>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <div class="contact-info">
+        <div>
+            <p><strong>Address:</strong></p>
+            <p>Pawsome Pupportunity 123 Doggo Lane Barksville, Makati Philippines</p>
+        </div>
+        <div>
+            <p><strong>Email:</strong></p>
+            <p>info@pawsomepupportunity.com</p>
+        </div>
+        <div>
+            <p><strong>Telephone:</strong></p>
+            <p>+63 (123) 456-7890</p>
+        </div>
+        <div>
+            <p><strong>Social Media:</strong></p>
+            <p>Facebook: @PawsomePupportunityPH</p>
+            <p>Instagram: @pawsome_pupportunity</p>
+        </div>
+    </div>
+    </div>
+  </section>
+  <div class="extra-space">
+    <!-- THIS DIV DOES NOTTING (HILL) JUST SPACE -->
+  </div>
 </div>
+
