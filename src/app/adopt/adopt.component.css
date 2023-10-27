@@ -1,0 +1,23 @@
+.button {
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.4s;
+}
+
+table {
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.custom-background {
+  background-color: #FDF6EE; 
+}
+
+.svg-grid-container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr); /* Three rows with equal height */
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  gap: 5px; /* Add some spacing between grid items */
+}
+
