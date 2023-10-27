@@ -1,0 +1,73 @@
+.adopt-wrapper {
+    margin-top: 50px;
+}
+
+.dogs-container .buttons {
+    display: flex;
+    justify-content: center;
+    background-color: #F2D9C6;
+    height: 30px;
+}
+
+.dogs-container .buttons * {
+    width: 20%;
+    margin: 0px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adopt-wrapper .dogs-container {
+    width: 600px;
+    margin: auto;
+}
+
+.adopt-wrapper .heading {
+    
+}
+
+.button {
+    cursor: pointer;
+}
+
+.dogs-container .container {
+    
+}
+
+.dog-button {
+    width: 150px;
+    height: 150px;
+
+    background-color: #F2D9C6;
+    margin: 25px;
+    float: left;
+
+    border-radius: 15px;
+}
+
+.dog-button .icon {
+    height: 80%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.dog-button .icon img {
+    margin-top: 10px;
+    height: 90%;
+    width: 80%;
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+.dog-button .label {
+    height: 20%;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
