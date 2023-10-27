@@ -34,3 +34,215 @@
     </div>
       <router-outlet></router-outlet>
   </div>
+<<<<<<< Updated upstream
+=======
+</div>
+
+<!-- POP-UP -->
+  <div class="popup">
+    <div class="content">
+      <div class="div-1">
+        <div class="div-2">
+          <div class="div-3">Bella</div>
+        </div>
+        <div class="container">
+          <div class="column-1">
+            <div class="image">
+              image
+            </div>
+            <div class="adopt">Adopt</div>
+          </div>
+          <div class="column-2">
+            <div class="info">
+              <table class="custom-table">
+                <tr>
+                  <td class="col1">Age:</td>
+                  <td class="col2">6</td>
+                </tr>
+                <tr>
+                  <td class="col1">Sex:</td>
+                  <td class="col2">Female</td>
+                </tr>
+                <tr>
+                  <td class="col1">Size:</td>
+                  <td class="col2">Medium</td>
+                </tr>
+                <tr>
+                  <td class="col1">Breed:</td>
+                  <td class="col2">Aspin</td>
+                </tr>
+                <tr>
+                  <td class="col1">Birthday:</td>
+                  <td class="col2">insert birth</td>
+                </tr>
+              </table>
+            </div>
+            <div class="additional-info">
+              "lolololol"
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .popup {
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+  
+    .div-1 {
+      border-radius: 40px;
+      background-color: #feca86;
+      box-sizing: border-box;
+      width: 600px;
+      min-height: 400px;
+    }
+
+    .div-2 {
+    background-color: #feca86;
+    align-self: center;
+    display: flex;
+    width: 444px;
+    max-width: 100%;
+    margin: 0 auto; 
+    padding: 20px 0 12px 1px;
+    position: relative;
+  }
+
+  .div-2::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #5f483e;
+    border-radius: 3px;
+    bottom: 3px; 
+  }
+
+  .div-3 {
+    color: #000;
+    text-align: center;
+    align-self: center;
+    text-wrap: nowrap;
+    margin: 0 auto;
+    font: 700 35px Maven Pro, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    margin-top: 20px;
+    height: 305px;
+  }
+    .column-1 {
+      max-width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      margin-left: 20px;
+      padding-right: 20px;
+      box-sizing: border-box;
+      flex: 1;
+    }
+  
+    .image {
+      border-radius: 40px;
+      background-color: #f2d9c6;
+      width: 100%;
+      height: 207.5px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .adopt {
+      border-radius: 40px;
+      background-color: #52B79F;
+      color:#fdf6ee;
+      align-self: center;
+      display: flex;
+      width: 100px;
+      height: 30px;
+      flex-direction: column;
+      align-items:center;
+      justify-content: center;
+      margin-top: 20px;
+      font: 700 16px Maven Pro, sans-serif;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+
+    .adopt:hover{
+      background-color: #368170;
+    }
+  
+    .column-2 {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      margin-right: 20px;
+      height: 305px;
+    }
+  
+    .info {
+      background-color: #fdf6ee;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 180px;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .custom-table {
+      width: 100%;
+      height: 100%;
+      text-align: left;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      
+    }
+
+    .col1 {
+      width: 97px;
+      font: 500 16px Maven Pro, sans-serif;
+    }
+
+    .col2 {
+      padding-left: 20px; 
+      font: 16px Maven Pro, sans-serif;
+    }
+  
+    .additional-info {
+      background-color: #fdf6ee;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      flex: 1;
+      margin-bottom: 15px;
+      font-style: italic;
+    }
+  </style>
+
+<router-outlet></router-outlet>
+>>>>>>> Stashed changes
